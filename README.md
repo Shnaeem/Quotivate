@@ -11,15 +11,25 @@ The object of this app is to provide daily dosage of motivation to all the users
 - User will be able to search by genre
 - User will be able to search by author
 
+#### Features:
+- See the quote of the day on main screen
+- Generate a random quote
+- Search by genre
+- Search by author
+- Get all the quotes
+- Responsive layout
+
+
 ## Live Demo Instructions:
 
 Instructions/steps to use the app will go below,
 
-- Navigate to [this link](link will come here) on your desktop/mobile.
-- Click on "quote of the day" or see the quote of the day
-- Generate a random quote
-- Search by genre
-- Search by author
+- 
+-
+-
+-
+-
+
 
 
 ## Wireframes: 
@@ -27,14 +37,26 @@ Instructions/steps to use the app will go below,
 The initial wireframes for the project,
 
 
-## Api that will be used for this project: 
+## This project is built using:
+
+- HTML/CSS
+- Javascript
+- [Axios](https://www.npmjs.com/package/axios)
+- [QuoteGarden API](https://pprathameshmore.github.io/QuoteGarden/)
 
 
 
 ## Requirements:
 
+- Be built with HTML, CSS , and Javascript.
+- Use Axios to retrieve data from an external source, and render such data into the DOM.
+- Use flexbox, a plus would be to use Bootstrap, or Ant Design, or Material UI, or Tailwind CSS etc… but not a must.
+- Implement responsive design on 3 screen sizes, desktop, tablet and mobile using media queries.
+- Host on either Netlify or Surge.
+- If your API requires the use of an API Key, an ENV file is required.
 
-#### Extra:
+
+#### Extras:
 
 Create a video on how to use the website
 

@@ -6,17 +6,13 @@
 
 This is a Motivational Quote App that is reponsive and can be used both in desktop and mobile.
 The object of this app is to provide daily dosage of motivation to all the users. The user's will be able search the quotes by following criteria,
+
+#### Features:
 - User will see a Quote of the day on the home page
 - User will be able to search/generate a random quote
 - User will be able to search by genre
 - User will be able to search by author
-
-#### Features:
-- See the quote of the day on main screen
-- Generate a random quote
-- Search by genre
-- Search by author
-- Get all the quotes
+- User can look at all the quotes
 - Responsive layout
 
 

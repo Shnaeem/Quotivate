@@ -26,7 +26,9 @@ Instructions/steps to use the app will go below,
 
 The initial wireframes for the project,
 
+
 ## Api that will be used for this project: 
+
 
 
 ## Requirements:

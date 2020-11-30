@@ -35,7 +35,10 @@ The initial wireframes for the project,
 #### Extra:
 
 Create a video on how to use the website
+
 Use another api to show random images for the project
+
+Use different color every time a new quote is generated
 
 
 

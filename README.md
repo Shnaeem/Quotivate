@@ -91,5 +91,3 @@ We sought inspiration from:
 - Use [another api](https://unsplash.com/documentation) to dispaly random motivational images behind each quote card
 - Use different colors every time a new quote is generated
 - Add Facebook and Twitter tools so users can share directly via social media platforms
-
-//test for jahaziel

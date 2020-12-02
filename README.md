@@ -27,10 +27,12 @@ Instructions/steps to use the app will go below,
 
 ## Wireframes: 
 
-This is an example of a static desktop wireframe;
+Our wireframes are designed using Figma, and can be accessed [here](https://www.figma.com/file/MXc1b1oi6b3qRtgL2ieb8k/Quotivate-API-Project?node-id=1%3A5).
+
+_This is an example of a static desktop wireframe;_
 ![](/images/desktopDemo.png)
 
-This is an example of a responsive tablet wireframe;
+_This is an example of a responsive tablet wireframe;_
 
 <div align="center">
 <img
@@ -39,7 +41,7 @@ This is an example of a responsive tablet wireframe;
   />
 </div>
 
-This is an example of a responsive mobile wireframe;
+_This is an example of a responsive mobile wireframe;_
 
 <div align="center">
 <img

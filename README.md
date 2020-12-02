@@ -36,7 +36,7 @@ _This is an example of a responsive tablet wireframe;_
 
 <div align="center">
 <img
-    src="https://github.com/blaquebeardcoder/Project_Phase1/blob/develop/images/tableDemo2.gif"
+    src="https://github.com/Shnaeem/Project_Phase1/blob/develop/images/tableDemo2.gif"
     width="100%"
   />
 </div>
@@ -45,7 +45,7 @@ _This is an example of a responsive mobile wireframe;_
 
 <div align="center">
 <img
-    src="https://github.com/blaquebeardcoder/Project_Phase1/blob/develop/images/mobileDemo.gif"
+    src="https://github.com/Shnaeem/Project_Phase1/blob/develop/images/mobileDemo.gif"
     width="100%"
   />
 </div>

@@ -1,0 +1,35 @@
+.form {
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+
+    text-align: center;
+    border-right: 30px;
+    height: 200px;
+
+
+   }
+   .form .input {
+    width: 50%;
+    height: 50%;
+}
+.check:hover{
+	background-color:lightgray;
+}
+.h1{
+    color: rgb(67, 206, 8);
+    margin-top: 100px;
+	font-family: Arial,sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+.temp {
+    margin-top: 7%;
+	font-family: Arial,sans-serif;
+	font-size: 1rem;
+    text-decoration:none;
+    text-align: center;
+}
+#getTemp{
+    margin-top:10% ;
+}

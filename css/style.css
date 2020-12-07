@@ -33,3 +33,9 @@
 #getTemp{
     margin-top:10% ;
 }
+
+div{
+    background-color: aliceblue;
+    margin: 100px;
+    padding: 100px;
+}

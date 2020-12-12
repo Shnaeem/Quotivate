@@ -1,0 +1,62 @@
+#Auth-Text-Color{
+    color: black;
+}
+
+.btn{
+    padding: 3px 6px;
+    margin-left:5px ;
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+}
+
+.container {
+    /* margin-left: 0px;
+    margin-right: 0px; */
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(240, 245, 249);
+  }
+
+
+.card {
+    margin: 1rem;
+    border: 1px solid gray;
+    /* background-color: aliceblue; */
+    text-align: center;
+    color:blueviolet;
+  }
+
+.AuthName{
+    color: brown;
+}  
+
+.card {
+    margin: .7rem;
+    padding: 2rem;
+    background: white;
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .2s linear;
+
+  }
+
+.card:hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -2px, 0);
+  }
+
+
+  @media screen and (min-width: 600px) {
+    .card {
+      flex: 1 1 calc(50% - 2rem);
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .card {
+      flex: 1 1 calc(33% - 2rem);
+    }
+  }

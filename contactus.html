@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="css/style2.css">
-
+  <link rel="stylesheet" href="css/AuthorPage.css">  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- <script src="https://use.fontawesome.com/d5f754aff8.js"></script> -->
@@ -40,10 +41,11 @@
                 ...
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="aboutus.html">About Us</a>
-                <a class="dropdown-item" href="contactus.html">Contact Us</a>
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another one</a>
+                <a class="dropdown-item" href="#">Something else here</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Copyright 2020</a>
+                <a class="dropdown-item" href="#">Separated link</a>
               </div>
             </li>
           </ul>
@@ -53,8 +55,18 @@
 
     <div id="home">
       <div class="landing-text">
-        <h1>Quotivate</h1>
-        <h3>Quotes to Motivate you</h3>
+        <h1 id="Auth-Text-Color">Authors</h1>
+        <div class="col-lg-12 ">
+            <div class="input-group md-form form-sm form-1 pl-0 " id="searchbarcontainer">
+              <input class="form-control my-0 py-1 searchbar" type="text" placeholder="Search" aria-label="Search" id="SearchbyAuth">
+              <a href="#" class="btn btn-default btn-lg" id="searchbyAuthBtn">Search</a>
+            </div>          
+        </div>
+
+        <div class="container">   
+            
+        </div>
+        <!--<h3>Quotes to Motivate you</h3>
       
         <div class="padding">
           <div class="container">
@@ -67,22 +79,21 @@
                 </div>
                 <div class="col-sm-6 exp2">
                       <div class="input-group md-form form-sm form-1 pl-0 " id="searchbarcontainer">
-                        <input class="form-control my-0 py-1 searchbar" type="text" placeholder="Search" aria-label="Search">
+                        <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search" id="searchbar">
                       </div>
 
                       <a href="#" class="btn btn-default btn-lg" id="randomquotebtn">Random Quote</a>
                   </div>
                 </div>    
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       
     </div>
 
 
-    <script src="js/RandomQuote.js"></script>
+    <script src="js/SearchbyAuthor.js"></script>
   </body>
 
 </html>
-

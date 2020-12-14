@@ -1,0 +1,13 @@
+body {
+    background:url(img/banners/background.png) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+  .opacity-3 {
+    opacity:0.6!important;
+  }
+ 

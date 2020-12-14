@@ -1,0 +1,9 @@
+About Us
+
+Quotivate is a thought proviking mobile responsonsive web app that encourages users to explore through more than 75,000 motivational quotes.  
+
+Whether it's classic historical philosophers and leaders, or modern day entrepreneurs, pop icons and influencers, we feature quotes from the most brilliant minds in motivation, sports, philosophy, and everything in between.  Our mission is to present these little nuggets of widsom in a visually-appealing manner that makes their message pop!
+
+You can discover new and exciting quotes randomly by pressing the "Surprise Me" button on the main page, or you can do a search by keywords, authors or topics. The quotes are displayed on beautiful mobile responsive cards, and include the quote text and the author.
+
+Quotivate was designed and developed by Front End Developers Naeem Shafi & Jahaziel Israel, and will include many new features and updates very soon.  

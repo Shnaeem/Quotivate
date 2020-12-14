@@ -59,7 +59,7 @@ figure {
 	height: 100%;
 }
 #fixed {
-	background-image: url('../img/background.jpg');
+	background-image: url('../img/banners/background.png');
 	position: fixed;
 	display: block;
 	top: 0;
@@ -131,7 +131,7 @@ margin: 0;
 
 #home{
 	padding-top: 50px;
-	background: url(../img/Background.png) no-repeat center center fixed;
+	background: url(../img/banners/background.png) no-repeat center center fixed;
 	display: table;
 	height: 100%;
 	position: relative;
@@ -228,7 +228,7 @@ margin: 0;
 }
 /* 
 #fixed{
-	background: url(img/background.jpg) no-repeat center center fixed;
+	background: url(img/banners/background.jpg) no-repeat center center fixed;
 	display: table;
 	height: 60%;
 	position: relative;

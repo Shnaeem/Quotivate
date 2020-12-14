@@ -10,7 +10,6 @@ Quotivate is a thought proviking mobile responsonsive web app that encourages us
 - User will see a **Quote of the day** on the home page
 - User will be able to **search/generate a random quote**
 - User will be able to **search by genre**
-- User will be able to **search by author**
 - User will be able to **search by keyword**
 - Responsive layout
 

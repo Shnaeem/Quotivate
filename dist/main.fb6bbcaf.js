@@ -4552,42 +4552,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 _dotenv.default.config();
 
-var BASE_URL = undefined;
+var BASE_URL = "https://quote-garden.herokuapp.com/api/v2/";
 var getDataButton = document.getElementById('getTemp');
 getDataButton.addEventListener("click", function (e) {
   e.preventDefault();
-  var url = "https://quote-garden.herokuapp.com/api/v2/quotes?page=1&limit=20"; //https://quote-garden.herokuapp.com/api/v2/quotes/random
+  var url = "".concat(BASE_URL, "quotes/random"); //https://quote-garden.herokuapp.com/api/v2/quotes/random
 
   _axios.default.get(url).then(function (response) {
-    console.log(response); // let tem = document.querySelector('.tem');
-    // tem.innerHTML= `${response.data.quotes[0].quoteText} \n ${response.data.quotes[1].quoteAuthor}`
-    // // // Try below
-
-    var allQuote = response.data.quotes;
-
-    for (var i = 0; i < allQuote.length; i++) {
-      // let tem = document.querySelector('.tem');
-      // tem.innerHTML= `${response.data.quotes[i].quoteText} \n ${response.data.quotes[i].quoteAuthor}`
-      var allQuoteText = allQuote[i].quoteText;
-      var allQuoteAuthor = allQuote[i].quoteAuthor;
-      var allQuoteID = allQuote[i]._id; //Create Multiple Quote
-
-      var newH3 = document.createElement('h3');
-      newH3.innerHTML = "".concat(allQuoteText, " <br> "); //Create Author Name
-
-      var newH4 = document.createElement('h4');
-      newH4.innerHTML = "".concat(allQuoteAuthor, " <br> <br> <br>");
-      document.querySelector('div').appendChild(newH3);
-      document.querySelector('div').appendChild(newH4); //Create ID Name - Testing to pull data from the API
-      //let newH5 = document.createElement('h5');
-      //newH5.innerHTML = `${allQuoteID} <br>`;
-      //document.querySelector('div').appendChild(newH5);
-      //console.log(newH3)
-      // //     let giphyObj = gif[i].images.fixed_height_small.url;
-      // //     let newImg = document.createElement('img');
-      // //     newImg.setAttribute("src", giphyObj); ??
-      // //     document.querySelector('div').appendChild(newImg);
-    }
+    //console.log(response);
+    var tem = document.querySelector('.tem');
+    tem.innerHTML = "".concat(response.data.quote.quoteText, " \n\n            ").concat(response.data.quote.quoteAuthor, "\n            ").concat(response.data.quote.quoteGenre);
   }).catch(function (error) {
     // handle error
     var tem = document.querySelector('.tem');
@@ -4623,7 +4597,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55276" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51848" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

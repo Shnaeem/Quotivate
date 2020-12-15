@@ -1,90 +1,18 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+﻿/* @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); */
 
-/* *{
-	border: 3px solid #73AD21;
-} */
 
-
-
-/*--- iOS Landing Page Fix
-
---*/
-/* section {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: table;
-}
-.home-wrap {
-	clip: rect(0, auto, auto, 0);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-#home {
-   background-image: url('../img/mountains.jpeg');
-	position: fixed;
-	display: table;
-	top: 0;
-	left: 0;
-	width: 100%;
-   height: 100%;
-   background-size: cover;
-   background-position: center center;
-   -webkit-transform: translateZ(0);
-		 transform: translateZ(0);
-   will-change: transform;
-   z-index: -1;
-}
-.landing-text {
-   z-index: 100;
-   display: table-cell;
-   text-align: center;
-   vertical-align: middle;
-} */
-/*--- iOS Fixed Image Fix
-figure {
-	position: relative;
-	width: 100%;
-	height: 60%;
-}
-.fixed-wrap {
-	clip: rect(0, auto, auto, 0);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-#fixed {
-	background-image: url('../img/banners/background.png');
-	position: fixed;
-	display: block;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-position: center center;
-	-webkit-transform: translateZ(0);
-          transform: translateZ(0);
-	will-change: transform;
-}
---*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 html, body{
 	height: 100%;
 	width: 100%;
 }
 
-
-/* Flex options */
-/* .fluid{
-	display: flex;
-	justify-content: space-between;
-} */
 
 /* the whole navbar settings */
 .navbar{
@@ -95,21 +23,25 @@ html, body{
 	opacity: 80%;
 	/* justify-content: space-between; */
 }
-/* 
-nav-flexing{
-	justify-content: center;
-} */
 
 /* Chaning the logo settings below */
 .navbar-brand{
 padding: 0px 30px 0px 30px;
-
 margin: 0;
+vertical-align: middle;
 }
 .navbar-brand img{
 	height: 100%;
 }
 
+
+.navbar-brand img:hover{
+	animation: mymove 1s;
+}
+@keyframes mymove {
+	/* 50% {transform: rotate(180deg);} */
+	100%{transform: scaleX(-1);}
+  }
 /* To color the text of home and all other buttons */
 .navbar-default .navbar-nav li a{
 	 color: #d5d5d5;
@@ -119,9 +51,9 @@ margin: 0;
 	color: #FFF;
 }
 
-.input-group.md-form.form-sm.form-2 input.amber-border {
+/* .input-group.md-form.form-sm.form-2 input.amber-border {
 	border: 1px solid #ffca28;
-  }
+  } */
 
 /* Styling for the background of the landing page */
 
@@ -131,7 +63,7 @@ margin: 0;
 
 #home{
 	padding-top: 50px;
-	background: url(../img/banners/background.png) no-repeat center center fixed;
+	background: url(../img/Background.png) no-repeat center center fixed;
 	display: table;
 	height: 100%;
 	position: relative;
@@ -151,70 +83,91 @@ margin: 0;
 .landing-text h1{
 	color: rgb(214, 83, 57);
 	font-size: 500%;
-	font-weight: 700;
+	font-weight: 900;
+	font-family: 'Oswald', sans-serif;
 }
-.landing-text h3{
+/* .landing-text h3{
 	color: white;
+} */
+
+#textH3{
+	color: white;
+	font-family: 'Roboto Slab', serif;
+}
+
+.exp1{
+	margin: auto;
+	/* width: 450px; */
+  	/* max-width: 40%; */
+  	/* border: 3px solid #73AD21; */
+	/* padding: 10px; */
+	  /* margin: 0 10%; */
 }
 
 .randomcard{
-	/* max-width: 60px; */
-	background-color: #d5d5d5;
+	/* max-width: 200px; */
+	/* min-height: 260px; */
+	background-color: #f1f5f9;
 	padding: 0;
-	margin-left: 10%;
-	margin-right: 10%;
-	opacity: 80%;
+	margin-left: 15%;
+	margin-right: 15%;
+	opacity: 85%;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
+	
+	
+	box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+	overflow: hidden;
+	transition: all .2s linear;
+	
+	/* border: 3px solid red; */
+
 }
 
+.randomcard:hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -2px, 0);
+  }
+
 .randomcardpara{
-	padding: 10%;
-	margin:0;
-	font-weight: 700;
-	font-size: 1.5rem;
+	padding: 2%;
+	margin-top: 8%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 8%;
+
+	font-family: 'Roboto Slab', serif;
+	/* font-weight: 400; */
+	font-size: 2.5rem;
+	letter-spacing: 0.05rem;
+	
+	/* border: 3px solid #73AD21; */
 }
 .randomcardauth{
 	padding: 20px;
 	background-color:darkblue;
 	color: white;
 	margin: 0;
-}
-.exp1{
-	margin: auto;
-  	width: 50%;
-  	border: 3px solid #73AD21;
-	  padding: 10px;
-	  /* margin: 0 10%; */
+	/* border: 3px solid #73AD21; */
+	font-family: 'Oswald', sans-serif;
 }
 
-.exp2{
-	padding-top: 5%;
-	/* padding-bottom: 15%; */
-	/* margin-left: 40px;
-	margin-right: 40px; */
-	text-align: center;
+
+.homePageBtnDiv{
 	vertical-align: middle;
-	/* width: 40%; */
 }
 
-#searchbarcontainer{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.searchbar{
-	max-width: 50%;
-	border-radius: 10px;
-}
 #randomquotebtn{
 	margin-top: 10%;
+    background-color: rgb(214, 83, 57);
+	border-radius: 0px;
+	color: whitesmoke;
 }
 
 /* ------------------- */
-.news{
+/* .news{
 	display: flex;
-}
+} */
 
 /* ----------------- */
 
@@ -226,36 +179,18 @@ margin: 0;
 .padding img {
 	width: 100%;
 }
-/* 
-#fixed{
-	background: url(img/banners/background.jpg) no-repeat center center fixed;
-	display: table;
-	height: 60%;
-	position: relative;
-	width: 100%;
-	background-size: cover;
-}
 
-footer{
-	width: 100%;
-	background-color: chocolate;
-	padding: 2% 2% 2% 2%;
-	color: white;
-	height: 2%; 
-}*/
-/* 
-.fa{
-	padding: 15px;
-	font-size: 25px;
-	color: #fff;
 
-}
 
-.fa:hover{
-	color: #d5d5d5;
-	text-decoration: none;
-}
 
-.icon{
-	max-width: 200px;
-} */
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.exp1{
+		margin: auto;
+		width: 450px;
+	}
+
+
+  }
+
+

@@ -17,7 +17,7 @@ getDataButton.addEventListener("click",(e)=>{
         .then( (response) =>{
             console.log(response);
             let QuoteTextPara = document.querySelector('.randomcardpara');
-            QuoteTextPara.innerHTML= `"${response.data.data[0].quoteText}"`
+            QuoteTextPara.innerHTML= `${response.data.data[0].quoteText}`
 
             let QuoteTextAuth = document.querySelector('.randomcardauth');
             QuoteTextAuth.innerHTML= `~${response.data.data[0].quoteAuthor}`;

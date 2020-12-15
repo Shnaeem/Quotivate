@@ -4,8 +4,8 @@ import { async } from 'q';
 dotenv.config();
 
 //const BASE_URL = process.env.BASE_URL;
-const SearchbyKeyword = document.getElementById('SearchbyKeyd')
-const getDataButton = document.getElementById('getData')
+const SearchbyKeyword = document.getElementById('SearchbyKw')
+const getDataButton = document.getElementById('SearchbyKwBtn')
 
 
 
@@ -17,8 +17,9 @@ getDataButton.addEventListener("click",(e)=>{
     div.innerHTML = "";
     
     let SearchbyKeywordS =SearchbyKeyword.value.toLowerCase()
-    let url = `https://quote-garden.herokuapp.com/api/v2/quotes/${SearchbyKeywordS}?page=1&limit=10`
-    //https://quote-garden.herokuapp.com/api/v2/quotes/random
+    //https://quote-garden.herokuapp.com/api/v3/quotes?query=${SearchbyKeywordS}
+    let url = `https://quote-garden.herokuapp.com/api/v3/quotes?query=${SearchbyKeywordS}&limit=99`
+    //https://quote-garden.herokuapp.com/api/v2/quotes/${SearchbyKeywordS}?page=1
 
 
 
@@ -27,7 +28,7 @@ getDataButton.addEventListener("click",(e)=>{
             console.log(response);
 
             // // // Variable for Quote Data
-            let allQuote = response.data.quotes
+            let allQuote = response.data.data
 
             //Create For loop to create multiple cards
              for (let i = 0; i < allQuote.length; i++){
@@ -43,22 +44,20 @@ getDataButton.addEventListener("click",(e)=>{
                     //create new divs
                     const card = document.createElement('div')
                     card.setAttribute('class', 'card')
-                    
-
-                    //Create Author Name
-                    let AuthorName = document.createElement('h4');
-                    AuthorName.setAttribute('class', 'AuthName');
-                    AuthorName.innerHTML = `#${allQuoteAuthor} <br><br>`;
-
 
                     //Create Quote Para
                     let QuotePara = document.createElement('p');
                     QuotePara.setAttribute('class', 'Para');
-                    QuotePara.innerHTML = `${allQuoteText} `;
+                    QuotePara.innerHTML = `${allQuoteText} `;                    
+
+                    //Create Author Name
+                    let AuthorName = document.createElement('h4');
+                    AuthorName.setAttribute('class', 'AuthName');
+                    AuthorName.innerHTML = `~${allQuoteAuthor} <br><br>`;
 
                     div.appendChild(card);
-                    card.appendChild(AuthorName);
                     card.appendChild(QuotePara);
+                    card.appendChild(AuthorName);
 
              }    
 

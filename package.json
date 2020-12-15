@@ -1,21 +1,22 @@
 {
-  "name": "Project_Phase1",
+  "name": "Weather-Project",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Shnaeem/Project_Phase1.git",
-  "author": "<blaquebeardcoder@gmail.com>",
+  "repository": "https://github.com/Shnaeem/Weather-Project",
+  "author": "shnaeem <naeem.shafi.ns@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
   },
-  "scripts": {
-    "start":"parcel index.html"
+ 
+  "scripts":{
+    "start": "parcel index.html"
   },
   "dependencies": {
     "axios": "^0.21.0",
     "dotenv": "^8.2.0"
   },
-  "browswerlist":[
+  "browerslists": [
     "last 1 chrome version"
   ]
 }

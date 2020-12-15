@@ -1,0 +1,199 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+
+/* the whole navbar settings */
+.navbar{
+	background-color: rgb(44, 43, 45);
+	/* height: 10%; */
+	padding: 1% 0;
+	font-size: 1.2em;
+	opacity: 80%;
+	/* justify-content: space-between; */
+}
+
+/* Chaning the logo settings below */
+.navbar-brand{
+padding: 0px 30px 0px 30px;
+margin: 0;
+vertical-align: middle;
+}
+.navbar-brand img{
+	height: 100%;
+}
+
+
+.navbar-brand img:hover{
+	animation: mymove 1s;
+}
+@keyframes mymove {
+	/* 50% {transform: rotate(180deg);} */
+	100%{transform: scaleX(-1);}
+  }
+/* To color the text of home and all other buttons */
+.navbar-default .navbar-nav li a{
+	 color: #d5d5d5;
+}
+/* To color the text of home and active */
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active{
+	color: #FFF;
+}
+
+/* .input-group.md-form.form-sm.form-2 input.amber-border {
+	border: 1px solid #ffca28;
+  } */
+
+/* Styling for the background of the landing page */
+
+.navbar-right{
+	padding-right: 2%;
+}
+
+#home{
+	padding-top: 50px;
+	background: url(/Background.531c3881.png) no-repeat center center fixed;
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+/* Aligning the button and text to the center */
+
+.landing-text{
+	padding-top: 30px;
+	display: table-cell;
+	/* vertical-align:middle; */
+	text-align: center;
+}
+
+.landing-text h1{
+	color: rgb(214, 83, 57);
+	font-size: 500%;
+	font-weight: 900;
+	font-family: 'Oswald', sans-serif;
+}
+/* .landing-text h3{
+	color: white;
+} */
+
+#textH3{
+	color: white;
+	font-family: 'Roboto Slab', serif;
+}
+
+.exp1{
+	margin: auto;
+	/* width: 450px; */
+  	/* max-width: 40%; */
+  	/* border: 3px solid #73AD21; */
+	/* padding: 10px; */
+	  /* margin: 0 10%; */
+}
+
+.randomcard{
+	/* max-width: 200px; */
+	/* min-height: 260px; */
+	background-color: #f1f5f9;
+	padding: 0;
+	margin-left: 15%;
+	margin-right: 15%;
+	opacity: 85%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	
+	
+	box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+	overflow: hidden;
+	transition: all .2s linear;
+	
+	/* border: 3px solid red; */
+
+}
+
+.randomcard:hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -2px, 0);
+  }
+
+.randomcardpara{
+	padding: 2%;
+	margin-top: 8%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 8%;
+
+	font-family: 'Roboto Slab', serif;
+	/* font-weight: 400; */
+	font-size: 2.5rem;
+	letter-spacing: 0.05rem;
+	
+	/* border: 3px solid #73AD21; */
+}
+.randomcardauth{
+	padding: 20px;
+	background-color:darkblue;
+	color: white;
+	margin: 0;
+	/* border: 3px solid #73AD21; */
+	font-family: 'Oswald', sans-serif;
+}
+
+
+.homePageBtnDiv{
+	vertical-align: middle;
+}
+
+#randomquotebtn{
+	margin-top: 10%;
+    background-color: rgb(214, 83, 57);
+	border-radius: 0px;
+	color: whitesmoke;
+}
+
+/* ------------------- */
+/* .news{
+	display: flex;
+} */
+
+/* ----------------- */
+
+.padding{
+	padding: 10px 0;
+}
+
+
+.padding img {
+	width: 100%;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.exp1{
+		margin: auto;
+		width: 450px;
+	}
+
+
+  }
+
+
+
+
+/*# sourceMappingURL=/style2.29d9320b.css.map */

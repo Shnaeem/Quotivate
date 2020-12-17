@@ -26,7 +26,7 @@ window.addEventListener('load',(e)=>{
             //Defining a variable that will contain all the new divs i.e cards
             let div = document.querySelector('.container');
 
-            var colors = ['#264653', '#2a9d8f', '#e9c46a','#f4a261', '#e76f51', '#252d41', '#0f182e', '#262322', '#002A32', '#791E94', '#171123'];
+            let colors = ['#264653', '#2a9d8f', '#e9c46a','#f4a261', '#e76f51', '#252d41', '#0f182e', '#262322', '#002A32', '#791E94', '#171123'];
           
 
             //Create For loop to create multiple cards
@@ -48,7 +48,7 @@ window.addEventListener('load',(e)=>{
                     AuthorName.innerHTML = `<a>${Topics}</a>`;
 
                     //variable for random colors
-                    var random_color = colors[Math.floor(Math.random() * colors.length)];
+                    let random_color = colors[Math.floor(Math.random() * colors.length)];
                     AuthorName.style.backgroundColor = random_color;
                 
 

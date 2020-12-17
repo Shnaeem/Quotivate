@@ -45,7 +45,7 @@ getDataButton.addEventListener("click",(e)=>{
                     //Create Author Name
                     let AuthorName = document.createElement('h4');
                     AuthorName.setAttribute('class', 'AuthName');
-                    AuthorName.innerHTML = `#${allQuoteAuthor} <br><br>`;
+                    AuthorName.innerHTML = `~${allQuoteAuthor} <br><br>`;
 
 
                     //Create Quote Para

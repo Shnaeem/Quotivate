@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Quotivate</title>
+  <title>Quotivate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
-  <link rel="stylesheet" href="css/style2.css">
-  <link rel="stylesheet" href="css/AuthorPage.css">  
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- <script src="https://use.fontawesome.com/d5f754aff8.js"></script> -->
 
 </head>
 
@@ -32,7 +29,6 @@
       </div>
       <div class="collapse navbar-collapse" id="navbar-collapse-main">
         <ul class="nav navbar-nav">
-          <!-- <li class="nav-flexing"> <a class="active" href="index.html">Home</a></li> -->
           <li class="nav-flexing"> <a href="explore.html">Explore</a></li>
           <li class="nav-flexing"> <a href="topics.html">Topics</a></li>
           <li class="nav-flexing"> <a href="quotes.html">Quotes</a></li>
@@ -43,17 +39,24 @@
     </div>
   </nav>
 
-    <div id="QuotesBg">
-      <div class="landing-text">
-        <!-- Heading of the page -->
-        <h1 id="quotesH1">Quotes</h1>
-        <!-- Generate cards inside the container -->
-        <div class="container">      
-        </div>
+  <div id="QuotesBg">
+    <div class="landing-text">
+
+      <!-- Heading of the page -->
+      <h1 id="quotesH1">Quotes</h1>
+
+      <!-- Button to get to top  -->
+      <button id="myBtn" title="Go to top">Top</button>
+
+      <!-- Generate cards inside the container -->
+      <div class="container-card-holder">
       </div>
     </div>
+  </div>
 
-    <script src="js/AllQuoteCardsWorking.js"></script>
-  </body>
+  <script src="js/AllQuoteCardsWorking.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
 
 </html>

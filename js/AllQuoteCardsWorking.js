@@ -12,7 +12,7 @@ window.addEventListener('load',(e)=>{
     e.preventDefault();
     let url = `https://quote-garden.herokuapp.com/api/v3/quotes?page=1&limit=400`
     //`https://quote-garden.herokuapp.com/api/v2/quotes?page=1&limit=21`
-    let div = document.querySelector('.container');
+    let div = document.querySelector('.container-card-holder');
     // div.innerHTML ="";
 
 
@@ -60,7 +60,7 @@ window.addEventListener('load',(e)=>{
         })
         .catch( (error)=> {
             // handle error
-            let tem = document.querySelector('.container');
+            let tem = document.querySelector('.container-card-holder');
             tem.innerHTML= `Please enter the keyword again`
             console.log(error);
         })

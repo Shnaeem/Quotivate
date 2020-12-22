@@ -1,10 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
@@ -21,7 +14,6 @@ html, body{
 	padding: 1% 0;
 	font-size: 1.2em;
 	opacity: 80%;
-	/* justify-content: space-between; */
 }
 
 /* Chaning the logo settings below */

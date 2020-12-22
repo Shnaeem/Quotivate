@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../img/Background.png":[["Background.531c3881.png","img/Background.png"],"img/Background.png"],"./../img/explore_banner.png":[["explore_banner.9bb911c9.png","img/explore_banner.png"],"img/explore_banner.png"],"./../img/quotes_banner.png":[["quotes_banner.ff3c7c67.png","img/quotes_banner.png"],"img/quotes_banner.png"],"./../img/topics_banner.png":[["topics_banner.119cf8c4.png","img/topics_banner.png"],"img/topics_banner.png"],"./../img/about_banner.png":[["about_banner.6759bca9.png","img/about_banner.png"],"img/about_banner.png"],"./../img/contact_banner.png":[["contact_banner.75637dfb.png","img/contact_banner.png"],"img/contact_banner.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58061" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55841" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

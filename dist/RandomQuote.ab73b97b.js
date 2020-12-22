@@ -2231,20 +2231,20 @@ type DotenvConfigOutput = {
 }
 
 */
-var fs = require('fs');
+const fs = require('fs');
 
-var path = require('path');
+const path = require('path');
 
 function log(message
 /*: string */
 ) {
-  console.log("[dotenv][DEBUG] ".concat(message));
+  console.log(`[dotenv][DEBUG] ${message}`);
 }
 
-var NEWLINE = '\n';
-var RE_INI_KEY_VAL = /^\s*([\w.-]+)\s*=\s*(.*)?\s*$/;
-var RE_NEWLINES = /\\n/g;
-var NEWLINES_MATCH = /\n|\r|\r\n/; // Parses src into an Object
+const NEWLINE = '\n';
+const RE_INI_KEY_VAL = /^\s*([\w.-]+)\s*=\s*(.*)?\s*$/;
+const RE_NEWLINES = /\\n/g;
+const NEWLINES_MATCH = /\n|\r|\r\n/; // Parses src into an Object
 
 function parse(src
 /*: string | Buffer */
@@ -2253,20 +2253,20 @@ function parse(src
 )
 /*: DotenvParseOutput */
 {
-  var debug = Boolean(options && options.debug);
-  var obj = {}; // convert Buffers before splitting into lines and processing
+  const debug = Boolean(options && options.debug);
+  const obj = {}; // convert Buffers before splitting into lines and processing
 
   src.toString().split(NEWLINES_MATCH).forEach(function (line, idx) {
     // matching "KEY' and 'VAL' in 'KEY=VAL'
-    var keyValueArr = line.match(RE_INI_KEY_VAL); // matched?
+    const keyValueArr = line.match(RE_INI_KEY_VAL); // matched?
 
     if (keyValueArr != null) {
-      var key = keyValueArr[1]; // default undefined or missing values to empty string
+      const key = keyValueArr[1]; // default undefined or missing values to empty string
 
-      var val = keyValueArr[2] || '';
-      var end = val.length - 1;
-      var isDoubleQuoted = val[0] === '"' && val[end] === '"';
-      var isSingleQuoted = val[0] === "'" && val[end] === "'"; // if single or double quoted, remove quotes
+      let val = keyValueArr[2] || '';
+      const end = val.length - 1;
+      const isDoubleQuoted = val[0] === '"' && val[end] === '"';
+      const isSingleQuoted = val[0] === "'" && val[end] === "'"; // if single or double quoted, remove quotes
 
       if (isSingleQuoted || isDoubleQuoted) {
         val = val.substring(1, end); // if double quoted, expand newlines
@@ -2281,7 +2281,7 @@ function parse(src
 
       obj[key] = val;
     } else if (debug) {
-      log("did not match key and value when parsing line ".concat(idx + 1, ": ").concat(line));
+      log(`did not match key and value when parsing line ${idx + 1}: ${line}`);
     }
   });
   return obj;
@@ -2293,11 +2293,11 @@ function config(options
 )
 /*: DotenvConfigOutput */
 {
-  var dotenvPath = path.resolve(process.cwd(), '.env');
-  var encoding
+  let dotenvPath = path.resolve(process.cwd(), '.env');
+  let encoding
   /*: string */
   = 'utf8';
-  var debug = false;
+  let debug = false;
 
   if (options) {
     if (options.path != null) {
@@ -2315,20 +2315,20 @@ function config(options
 
   try {
     // specifying an encoding returns a string instead of a buffer
-    var parsed = parse(fs.readFileSync(dotenvPath, {
-      encoding: encoding
+    const parsed = parse(fs.readFileSync(dotenvPath, {
+      encoding
     }), {
-      debug: debug
+      debug
     });
     Object.keys(parsed).forEach(function (key) {
       if (!Object.prototype.hasOwnProperty.call(process.env, key)) {
         process.env[key] = parsed[key];
       } else if (debug) {
-        log("\"".concat(key, "\" is already defined in `process.env` and will not be overwritten"));
+        log(`"${key}" is already defined in \`process.env\` and will not be overwritten`);
       }
     });
     return {
-      parsed: parsed
+      parsed
     };
   } catch (e) {
     return {
@@ -4550,24 +4550,23 @@ var _q = require("q");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_dotenv.default.config(); // const BASE_URL = process.env.BASE_URL;
+_dotenv.default.config();
 
-
-var getDataButton = document.getElementById('randomquotebtn');
-getDataButton.addEventListener("click", function (e) {
+const getDataButton = document.getElementById('randomquotebtn');
+getDataButton.addEventListener("click", e => {
   e.preventDefault();
-  var url = "https://quote-garden.herokuapp.com/api/v3/quotes/random"; //https://quote-garden.herokuapp.com/api/v2/quotes/random
+  let url = `https://quote-garden.herokuapp.com/api/v3/quotes/random`;
 
-  _axios.default.get(url).then(function (response) {
+  _axios.default.get(url).then(response => {
     console.log(response);
-    var QuoteTextPara = document.querySelector('.randomcardpara');
-    QuoteTextPara.innerHTML = "".concat(response.data.data[0].quoteText);
-    var QuoteTextAuth = document.querySelector('.randomcardauth');
-    QuoteTextAuth.innerHTML = "~".concat(response.data.data[0].quoteAuthor);
-  }).catch(function (error) {
+    let QuoteTextPara = document.querySelector('.randomcardpara');
+    QuoteTextPara.innerHTML = `${response.data.data[0].quoteText}`;
+    let QuoteTextAuth = document.querySelector('.randomcardauth');
+    QuoteTextAuth.innerHTML = `~${response.data.data[0].quoteAuthor}`;
+  }).catch(error => {
     // handle error
-    var tem = document.querySelector('.randomcardpara');
-    tem.innerHTML = "Please enter the keyword again";
+    let tem = document.querySelector('.randomcardpara');
+    tem.innerHTML = `Please enter the keyword again`;
     console.log(error);
   });
 });
@@ -4599,7 +4598,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56969" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55841" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

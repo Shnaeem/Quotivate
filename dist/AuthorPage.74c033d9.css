@@ -1,188 +1,331 @@
- /* @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&display=swap'); */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-/* Css for pages starts here */
 
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
 
-/* Row of search bar */
-#searchbarcontainer{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	/* border: 3px solid #73AD21; */
+/* the whole navbar settings */
+.navbar {
+	background-color: rgb(44, 43, 45);
+	/* height: 10%; */
+	padding: 1% 0;
+	font-size: 1.2em;
+	opacity: 80%;
+}
+
+/* Changing the logo settings below */
+.navbar-brand {
+	padding: 0px 30px 0px 30px;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.navbar-brand img {
+	height: 100%;
 }
 
 
+.navbar-brand img:hover {
+	animation: mymove 1s;
+}
 
-#exploreBg{
-  /* padding-top: 50px; */
-  /* padding-bottom: 50px; */
-	background: url(/explore_banner.9bb911c9.png) no-repeat center center fixed;
-  display: table;
-  width: 100%;
+@keyframes mymove {
+
+	/* 50% {transform: rotate(180deg);} */
+	100% {
+		transform: scaleX(-1);
+	}
+}
+
+/* To color the text of home and all other buttons */
+.navbar-default .navbar-nav li a {
+	color: #d5d5d5;
+}
+
+/* To color the text of home and active */
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a.active {
+	color: #FFF;
+}
+
+/* Styling for the background of the landing page */
+
+.navbar-right {
+	padding-right: 2%;
+}
+
+#home {
+	padding-top: 50px;
+	background: url(/Background.531c3881.png) no-repeat center center fixed;
+	display: table;
+	height: 100%;
 	position: relative;
+	width: 100%;
 	background-size: cover;
 }
 
-/* Heading of page */
-#exploreH1{
-    margin-top: 8%;
-    color: black;
-    /* border: 3px solid #73AD21; */
-    margin-bottom: 5%;
-    /* font-size: 3rem; */
+/* Aligning the button and text to the center */
 
-  }
-
-  .xyz{
-        
-    font-family: 'Oswald', sans-serif;
-    font-weight: 900;
-  }
-
-
-  /* 
-  .div{
-    border: 3px solid #73AD21;
-  } */
-
-
-
-  #SearchbyKw{
-	max-width: 50%;
-	border-radius: 10px;
+.landing-text {
+	padding-top: 30px;
+	display: table-cell;
+	/* vertical-align:middle; */
 	text-align: center;
-  }
+}
 
-  #SearchbyKwBtn{
-    padding: 3px 6px;
-	margin-left:5px ;
-    background-color: cornflowerblue;
-   	border-color: cornflowerblue;
-  }
+.landing-text h1 {
+	color: rgb(214, 83, 57);
+	font-size: 500%;
+	font-weight: 900;
+	font-family: 'Oswald', sans-serif;
+}
 
-  .container {
-	/* margin-left: 0px;
-	margin-right: 0px; */
-	width: 100%;
-  margin-top: 10%;
-  padding-top:2% ;
+/* .landing-text h3{
+	color: white;
+} */
+
+#textH3 {
+	color: white;
+	font-family: 'Roboto Slab', serif;
+}
+
+.randomCardRow {
+	margin: auto;
+}
+
+.randomcard {
+	/* max-width: 200px; */
+	/* min-height: 260px; */
+	background-color: #f1f5f9;
+	padding: 0;
+	margin-left: 15%;
+	margin-right: 15%;
+	opacity: 85%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+
+
+	box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+	overflow: hidden;
+	transition: all .2s linear;
+
+	/* border: 3px solid red; */
+
+}
+
+.randomcard:hover {
+	box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+	transform: translate3D(0, -2px, 0);
+}
+
+.randomcardpara {
+	padding: 2%;
+	margin-top: 8%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 8%;
+
+	font-family: 'Roboto Slab', serif;
+	/* font-weight: 400; */
+	font-size: 2.5rem;
+	letter-spacing: 0.05rem;
+
+	/* border: 3px solid #73AD21; */
+}
+
+.randomcardauth {
+	padding: 20px;
+	background-color: darkblue;
+	color: white;
+	margin: 0;
+	/* border: 3px solid #73AD21; */
+	font-family: 'Oswald', sans-serif;
+}
+
+
+.homePageBtnDiv {
+	vertical-align: middle;
+}
+
+#randomquotebtn {
+	margin-top: 10%;
+	background-color: rgb(214, 83, 57);
+	border-radius: 0px;
+	color: whitesmoke;
+}
+
+/* ------------------- */
+/* .news{
 	display: flex;
+} */
+
+/* ----------------- */
+
+.padding {
+	padding: 10px 0;
+}
+
+
+.padding img {
+	width: 100%;
+}
+
+
+
+
+
+
+
+/* This is the selection */
+
+
+
+/* Css for pages starts here */
+/* Row of search bar */
+#searchbarcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+#exploreBg {
+  background: url(/explore_banner.9bb911c9.png) no-repeat center center fixed;
+  display: table;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+#exploreH1 {
+  margin-top: 8%;
+  color: black;
+  /* border: 3px solid #73AD21; */
+  margin-bottom: 5%;
+  /* font-size: 3rem; */
+
+}
+
+#SearchbyKw {
+  max-width: 50%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#SearchbyKwBtn {
+  padding: 3px 6px;
+  margin-left: 5px;
+  background-color: cornflowerblue;
+  border-color: cornflowerblue;
+}
+
+.container-card-holder {
+  /* margin-left: 0px;
+	margin-right: 0px; */
+  width: 100%;
+  margin-top: 10%;
+  padding-top: 2%;
+  display: flex;
   flex-wrap: wrap;
   background-color: rgb(240, 245, 249);
-  }
+}
 
 
-  /* The Dynamically created card styling is done here */
-  .card {
-      /* margin: .7rem;
+/* The Dynamically created card styling is done here */
+.card {
+  /* margin: .7rem;
       padding: 2rem; */
-      margin: 1rem;
-      padding: 0;
-      background: white;
-      box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-      overflow: hidden;
-      transition: all .2s linear;
+  margin: 1rem;
+  padding: 0;
+  background: white;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  transition: all .2s linear;
 
-      /* Using this to allign content inside with flex
+  /* Using this to allign content inside with flex
       to help with keeping the authorname class at the end of the card*/
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-between;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
 
-      /* this fixed the topic page card bug */
-      flex: 1 1 calc(60% - 2rem);
-    }
-  
-  .card:hover {
-      box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
-      transform: translate3D(0, -2px, 0);
-    }
-  
-     /* Inside of cards are changed here */
+  /* this fixed the topic page card bug */
+  flex: 1 1 calc(60% - 2rem);
+}
 
-     /* Style the Paragraph inside the cards */
-  .Para{
-      /* border: 3px solid #73AD21; */
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -2px, 0);
+}
 
-      padding: 2%;
-      margin-top: 8%;
-      margin-left: 15%;
-      margin-right: 15%;
-      margin-bottom: 8%;
+/* Inside of cards are changed here */
 
-      font-family: 'Roboto Slab', serif;
-      font-weight: 400;
-      font-size: 2rem;
-      letter-spacing: 0.02em;
+/* Style the Paragraph inside the cards */
+.Para {
 
+  padding: 2%;
+  margin-top: 8%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 8%;
 
-    }
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+}
 
-  /* Style the authorname inside the cards */
-  .AuthName{
-      /* border: 3px solid #73AD21; */
+/* Style the authorname inside the cards */
+.AuthName {
+  padding: 20px;
+  background-color: darkblue;
+  color: white;
+  margin-bottom: 0;
+  font-family: 'Oswald', sans-serif;
 
-      padding: 20px;
-      background-color:darkblue;
-      color: white;
-      margin-bottom: 0;
-      font-family: 'Oswald', sans-serif;
-      /* this is needed to keep the auth name at the
-      end of the card */
-      /* margin-top: auto; */
-      
-    }
+}
 
 
 
 
+/* Style for Quotes Page */
 
-
-
-
-  /* Style for Quotes Page */
-
-#quotesH1{
+#quotesH1 {
   margin-top: 8%;
 }
 
-#QuotesBg{
-      background: url(/quotes_banner.ff3c7c67.png) no-repeat center center fixed;
-      display: table;
-      width: 100%;
-      position: relative;
-      background-size: cover;
-    }    
+#QuotesBg {
+  background: url(/quotes_banner.ff3c7c67.png) no-repeat center center fixed;
+  display: table;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
 
 
 /* Style for Topics Page */
+#topicsBg {
+  background: url(/topics_banner.119cf8c4.png) no-repeat center center fixed;
+  display: table;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
 
 
-#topicsBg{
-    background: url(/topics_banner.119cf8c4.png) no-repeat center center fixed;
-    display: table;
-    width: 100%;
-    position: relative;
-    background-size: cover;
-    }
-
-    
-#topicsH1{
+#topicsH1 {
   margin-top: 8%;
   color: black;
-}    
+}
 
-.TopicCardText{
-  /* border: 3px solid #73AD21; */
-  /* padding: 20%; */
-  background-color:darkblue;
+.TopicCardText {
+  background-color: darkblue;
   color: white;
   margin: 0;
 
@@ -192,63 +335,62 @@
   /* font-size: 1rem; */
   cursor: pointer;
   /* margin: 20%; */
-}      
-.TopicCardText a{
+}
+
+.TopicCardText a {
   color: white;
-}  
+}
 
 
 
 /* About Page  */
 
-#abtusBg{
+#abtusBg {
   background: url(/about_banner.6759bca9.png) no-repeat center center fixed;
   display: table;
   width: 100%;
-	position: relative;
-	background-size: cover;
+  position: relative;
+  background-size: cover;
 }
 
-#abtusH1{
+#abtusH1 {
   margin-top: 8%;
   color: white;
-  
   margin-bottom: 5%;
-  /* font-size: 3rem; */
+}
 
-  /* border: 3px solid #73AD21; */
- }
-.abtParaDiv{
+.abtParaDiv {
   background-color: #f7f7f7;
   padding: 1rem;
   margin: 0;
   /* border: 3px solid #73AD21; */
 }
 
- #aboutpara{
-   background-color: white;
-   margin: 5%;
-   padding: 5%;
-   font-size: large;
-   text-align: left;
-   /* border: 3px solid #73AD21; */
- }
+#aboutpara {
+  background-color: white;
+  margin: 5%;
+  padding: 5%;
+  font-size: large;
+  text-align: left;
+  /* border: 3px solid #73AD21; */
+}
 
 
- /* Contact Us Page */
-#cntusBgC{
+/* Contact Us Page */
+#cntusBgC {
   background-color: #f7f7f7;
 }
- #contactusBG{
+
+#contactusBG {
   background: url(/contact_banner.75637dfb.png) no-repeat center center fixed;
   display: table;
   width: 100%;
-	position: relative;
-	background-size: cover;
+  position: relative;
+  background-size: cover;
 }
 
 
-#contactusH1{
+#contactusH1 {
   margin-top: 8%;
   color: black;
   /* border: 3px solid #73AD21; */
@@ -256,58 +398,80 @@
   /* font-size: 3rem; */
 }
 
-/* 
-.container-contactus{
-  border: 3px solid #73AD21;
-}
-.row-contactus{
-  border: 3px solid #73AD21;
-} */
-
-.colBg{
+.colBg {
   /* border: 3px solid #73AD21; */
   padding: 4% 10%;
   background-color: white;
-  margin:0;
+  margin: 0;
   display: flex;
-  flex-flow: column wrap  ;
+  flex-flow: column wrap;
 }
 
-.iconBg{
+.iconBg {
   margin: 0;
   /* border: 3px solid #73AD21; */
   background-color: tomato;
   /* width: 100%; */
 }
 
-.iconSize{
+.iconSize {
   margin: 1rem;
   /* padding: 15px; */
   height: 5rem;
 }
 
-.iconH3{
+.iconH3 {
 
   color: white;
 }
 
-/* .iconH5{
-} */
+
+
+/* On-scroll button */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+
+
 /* Media Queries */
-    @media screen and (min-width: 600px) {
-      .card {
-        flex: 1 1 calc(50% - 2rem);
-      }
-      .TopicCardText{
-        padding: 20%;
-      }
-    }
-    
-    @media screen and (min-width: 900px) {
-      .card {
-        flex: 1 1 calc(33% - 2rem);
-      }
-    }
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+
+  .TopicCardText {
+    padding: 20%;
+  }
+
+  .randomCardRow {
+		margin: auto;
+		width: 450px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
+
 
 
 /*# sourceMappingURL=/AuthorPage.74c033d9.css.map */

@@ -1,22 +1,22 @@
 {
-  "name": "Weather-Project",
+  "name": "quotivate",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Shnaeem/Weather-Project",
+  "repository": "https://github.com/Shnaeem/Quotivate",
   "author": "shnaeem <naeem.shafi.ns@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4"
-  },
- 
+  "browerslists": [
+    "last 1 chrome version"
+  ],
+
   "scripts":{
     "start": "parcel index.html"
   },
   "dependencies": {
-    "axios": "^0.21.0",
-    "dotenv": "^8.2.0"
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0"
   },
-  "browerslists": [
-    "last 1 chrome version"
-  ]
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
 }

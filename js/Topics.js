@@ -1,8 +1,6 @@
 import axios from 'axios';
 import dotenv from 'dotenv';
-import {
-    async
-} from 'q';
+// import { async } from 'q';
 dotenv.config();
 
 //Event will start as soon as the page is loaded

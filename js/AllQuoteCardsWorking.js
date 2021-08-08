@@ -1,6 +1,6 @@
 import axios from 'axios';
 import dotenv from 'dotenv';
-import { async } from 'q';
+// import { async } from 'q';
 dotenv.config();
 
 //const getDataButton = document.getElementById('searchbyAllQuotes')

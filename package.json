@@ -8,8 +8,7 @@
   "browerslists": [
     "last 1 chrome version"
   ],
-
-  "scripts":{
+  "scripts": {
     "start": "parcel index.html"
   },
   "dependencies": {
@@ -17,6 +16,7 @@
     "dotenv": "^10.0.0"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0"
   }
 }
